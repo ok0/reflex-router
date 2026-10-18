@@ -16,7 +16,7 @@ Status legend:
 - Volume/pages: 29(6):1073-1081.e4
 - Identifiers (DOI / arXiv / URL): DOI 10.1016/j.cub.2019.01.079; PMID 30827912
 - Cited in: docs/report.md, docs/report.ko.md
-- Verification source: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=AUTH:%22von%20Reyn%20CR%22%20AND%20TITLE:%22Feature%20integration%22&format=json&resultType=lite (Europe PMC index)
+- Verification source: PubMed PMID 30827912
 - Date consulted: 2026-10-18
 - Status: verified
 - Evidence level: none
