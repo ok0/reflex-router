@@ -1,0 +1,59 @@
+[project]
+name = "reflex-router"
+version = "0.0.1"
+description = "Reflex router core library: LIF circuit gate and formula gate"
+requires-python = ">=3.14"
+license = "MIT"
+license-files = ["LICENSE"]
+dependencies = ["numpy>=2.3"]
+
+[build-system]
+requires = ["uv_build>=0.9,<0.14"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "reflex_router"
+source-exclude = ["circuit-data/**"]
+
+[tool.uv.workspace]
+members = ["discovery"]
+
+[tool.uv.sources]
+reflex-router-discovery = { workspace = true }
+
+[dependency-groups]
+dev = [
+  "reflex-router-discovery",
+  "pytest>=8.4",
+  "ruff>=0.13",
+  "pyright[nodejs]>=1.1.405",
+  "pytest-asyncio>=1.2",
+  "hypothesis>=6.140",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "discovery/tests", "spikes/s1"]
+addopts = "--import-mode=importlib -ra"
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+markers = [
+    "flywire: needs downloaded FlyWire v783 data; skipped when absent",
+    "fallback_env: needs the py3.10 fallback env (set RR_FALLBACK_PYTHON); skipped otherwise",
+    "longrun: M5 whole-brain simulation; runs only when RR_LONGRUN=1",
+]
+
+[tool.ruff]
+target-version = "py314"
+line-length = 100
+extend-exclude = ["discovery/src/rr_discovery/shiu/model.py", "discovery/src/rr_discovery/shiu/utils.py"]
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.pyright]
+pythonVersion = "3.14"
+include = ["src", "discovery/src", "tests", "discovery/tests", "scripts"]
+exclude = ["discovery/src/rr_discovery/shiu/model.py", "discovery/src/rr_discovery/shiu/utils.py", "**/__pycache__", ".venv"]
+typeCheckingMode = "standard"
+reportMissingTypeStubs = false
+venvPath = "."
+venv = ".venv"

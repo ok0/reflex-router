@@ -1,0 +1,40 @@
+# sha256 pins for Shiu model files (repo philshiu/Drosophila_brain_model @ 91bdd1e). Pinned from the
+# upstream commit; filled by `rr-discover shiu-fetch --record-hashes` if needed, then committed.
+# Do not edit by hand.
+
+[files]
+
+[files."2023_03_23_completeness_630_final.csv"]
+sha256 = "e6b71e17671a9bdb05f55e4bc6774640a1418cb7a05125e0fc994ad40f9bfdfb"
+size = 3057611
+source = "https://raw.githubusercontent.com/philshiu/Drosophila_brain_model/91bdd1e7dcf193f3e7ca5a8933497fcef63b7960/2023_03_23_completeness_630_final.csv"
+
+[files."2023_03_23_connectivity_630_final.parquet"]
+sha256 = "94db8c650533bc36ffa3223f2e62325d5648b8d6bd31c3a4e1c804628c7557b3"
+size = 86630944
+source = "https://raw.githubusercontent.com/philshiu/Drosophila_brain_model/91bdd1e7dcf193f3e7ca5a8933497fcef63b7960/2023_03_23_connectivity_630_final.parquet"
+
+[files."Completeness_783.csv"]
+sha256 = "bbb847a4cc2caaa7a16349722d220c087317b946d148d4d592d94d250617a311"
+size = 3327347
+source = "https://raw.githubusercontent.com/philshiu/Drosophila_brain_model/91bdd1e7dcf193f3e7ca5a8933497fcef63b7960/Completeness_783.csv"
+
+[files."Connectivity_783.parquet"]
+sha256 = "efeb23fb99098e9c390f6869969b2a121a2ee92c833cfc45ecb2c1d8e1af0347"
+size = 100804642
+source = "https://raw.githubusercontent.com/philshiu/Drosophila_brain_model/91bdd1e7dcf193f3e7ca5a8933497fcef63b7960/Connectivity_783.parquet"
+
+[files."LICENSE"]
+sha256 = "3621f6d6476189190e2960fa43f11b275ba4eca848fdac50a1ba2925de6223e8"
+size = 1085
+source = "https://raw.githubusercontent.com/philshiu/Drosophila_brain_model/91bdd1e7dcf193f3e7ca5a8933497fcef63b7960/LICENSE"
+
+[files."model.py"]
+sha256 = "fc45837d7122c6ce2a7f3f2f23c515992e4b232aadb919efabb72337fac88e4e"
+size = 11900
+source = "https://raw.githubusercontent.com/philshiu/Drosophila_brain_model/91bdd1e7dcf193f3e7ca5a8933497fcef63b7960/model.py"
+
+[files."utils.py"]
+sha256 = "f378cf0b464f2ac5e1daf3609ba25fd51c7e34f294846281707ffe006c3e9ef1"
+size = 2176
+source = "https://raw.githubusercontent.com/philshiu/Drosophila_brain_model/91bdd1e7dcf193f3e7ca5a8933497fcef63b7960/utils.py"

@@ -1,0 +1,18 @@
+# sha256 pins for raw data in data.data_dir. Trust-on-first-use: filled by `rr-discover fetch --record-hashes`, then committed. Do not edit by hand.
+
+[files]
+
+[files."Supplemental_file1_neuron_annotations.tsv"]
+sha256 = "b214970b55d2fbe0853bba536fdcb9e28730f4eb7ab06f600491df795da683cd"
+size = 31720298
+source = "https://raw.githubusercontent.com/flyconnectome/flywire_annotations/v3.2.0/supplemental_files/Supplemental_file1_neuron_annotations.tsv"
+
+[files."proofread_connections_783.feather"]
+sha256 = "24f960ae3e7d4f8cd30db3b62e99fb5179cc3d1e76d8c155bfb441e9737d3faf"
+size = 852022274
+source = "https://zenodo.org/records/10676866/files/proofread_connections_783.feather?download=1"
+
+[files."proofread_root_ids_783.npy"]
+sha256 = "7c7b7e818e9232e5ab64793d52ba20574dbe9da3a6509fbc74193b0f259a01be"
+size = 1114168
+source = "https://zenodo.org/records/10676866/files/proofread_root_ids_783.npy?download=1"

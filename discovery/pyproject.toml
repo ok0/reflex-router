@@ -1,0 +1,29 @@
+[project]
+name = "reflex-router-discovery"
+version = "0.0.1"
+description = "Offline FlyWire whole-brain discovery toolchain for reflex-router"
+requires-python = ">=3.14"
+license = "MIT"
+dependencies = [
+  "numpy>=2.3",
+  "pandas>=2.3.3",
+  "pyarrow>=22",
+  "brian2==2.10.1",
+  "cython>=3.1",      # brian2 Cython code-generation target
+  "setuptools>=80",   # build tooling used by brian2's Cython target
+  "joblib>=1.4",      # imported by vendored Shiu model.py
+  "reflex-router",
+]
+
+[project.scripts]
+rr-discover = "rr_discovery.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.9,<0.14"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "rr_discovery"
+
+[tool.uv.sources]
+reflex-router = { workspace = true }

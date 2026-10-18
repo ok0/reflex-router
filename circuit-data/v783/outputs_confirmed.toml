@@ -1,0 +1,110 @@
+# Evidence labels for the v783 output groups (charter R5, ADR-15).
+# Documentation only: no code reads this file; circuit.json and metadata.json are unchanged.
+# Generated in M10 from circuit.json roles.
+
+schema = 1
+circuit = "circuit-data/v783/circuit.json"
+circuit_sha256 = "4ca62284d2831f01228e2d0f8a71fdfce78a0b26674cb1bbccf537f487263d91"
+evidence_scale = "LOW: no primary source read; link from search snippets or a literature prior only; selection by the v783 data check (ADR-15)"
+primary_sources_read_in_m10 = []
+candidates_report = "circuit-data/v783/reports/parallel_dn_candidates.md"
+
+[giant_fiber]
+cell_type = "DNp01"
+role = "output_gf"
+n_neurons = 2
+sides = ["left", "right"]
+relation = "output group of the sourced LC4/LPLC2-to-giant-fiber relation"
+relation_sources = ["von Reyn et al. 2014", "von Reyn et al. 2017", "Ache et al. 2019"]
+relation_evidence = "MEDIUM, abstract only (docs/report.md section 2.2)"
+bibliography = "docs/references.md"
+
+[[parallel]]
+cell_type = "DNg40"
+role = "output_parallel"
+n_neurons = 2
+sides = ["left", "right"]
+label = "data-driven"
+evidence = "LOW"
+primary_source = ""
+
+[[parallel]]
+cell_type = "DNp02"
+role = "output_parallel"
+n_neurons = 2
+sides = ["left", "right"]
+label = "prior"
+evidence = "LOW"
+primary_source = ""
+
+[[parallel]]
+cell_type = "DNp03"
+role = "output_parallel"
+n_neurons = 1
+sides = ["left"]
+label = "prior"
+evidence = "LOW"
+primary_source = ""
+
+[[parallel]]
+cell_type = "DNp04"
+role = "output_parallel"
+n_neurons = 2
+sides = ["left", "right"]
+label = "prior"
+evidence = "LOW"
+primary_source = ""
+
+[[parallel]]
+cell_type = "DNp05"
+role = "output_parallel"
+n_neurons = 2
+sides = ["left", "right"]
+label = "data-driven"
+evidence = "LOW"
+primary_source = ""
+
+[[parallel]]
+cell_type = "DNp06"
+role = "output_parallel"
+n_neurons = 2
+sides = ["left", "right"]
+label = "prior"
+evidence = "LOW"
+primary_source = ""
+
+[[parallel]]
+cell_type = "DNp103"
+role = "output_parallel"
+n_neurons = 2
+sides = ["left", "right"]
+label = "data-driven"
+evidence = "LOW"
+primary_source = ""
+
+[[parallel]]
+cell_type = "DNp11"
+role = "output_parallel"
+n_neurons = 2
+sides = ["left", "right"]
+label = "reported"
+evidence = "LOW"
+primary_source = ""
+
+[[parallel]]
+cell_type = "DNp35"
+role = "output_parallel"
+n_neurons = 1
+sides = ["left"]
+label = "data-driven"
+evidence = "LOW"
+primary_source = ""
+
+[[parallel]]
+cell_type = "DNpe025"
+role = "output_parallel"
+n_neurons = 1
+sides = ["right"]
+label = "data-driven"
+evidence = "LOW"
+primary_source = ""

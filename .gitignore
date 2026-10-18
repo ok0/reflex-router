@@ -1,0 +1,22 @@
+.claude
+.docs
+.ensemble
+.request
+.DS_Store
+
+# Python / tooling
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+dist/
+build/
+*.egg-info/
+.env
+.env.*
+# Downloaded raw FlyWire data (never committed); reports/ stays tracked
+circuit-data/*/raw/
+circuit-data/*/model_input/
+circuit-data/*/regress/
+circuit-data/*/discover/

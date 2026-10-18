@@ -1,0 +1,25 @@
+{
+  "brian2_imported": false,
+  "deviations": [],
+  "expected_sha256": "4ca62284d2831f01228e2d0f8a71fdfce78a0b26674cb1bbccf537f487263d91",
+  "frozen_files_sha256": {
+    "spikes/s1/s1_frozen.py": "dfb343f672dca9c5623bb6e0a9b2c1df49ea22c83a6bddd1143e978e445db9c2",
+    "spikes/s1/s1_verdict.py": "f1da24d117d0e74f91457373b518e924aed107a67445bbe0f5e124487d1a6f01"
+  },
+  "git_status_porcelain": "",
+  "network_attempts": 0,
+  "numpy": "2.5.4",
+  "platform": "macOS-15.7.7-arm64-arm-64bit-Mach-O",
+  "python": "3.14.8 (main, Oct  9 2026, 15:11:09) [Clang 22.1.3 ]",
+  "repro": {
+    "part_a_map.csv": true,
+    "part_a_stats.json": true,
+    "part_b_results.csv": true,
+    "part_b_summary.json": true
+  },
+  "sha256_after": "4ca62284d2831f01228e2d0f8a71fdfce78a0b26674cb1bbccf537f487263d91",
+  "sha256_before": "4ca62284d2831f01228e2d0f8a71fdfce78a0b26674cb1bbccf537f487263d91",
+  "sha256_identical": true,
+  "wall_clock_s": 508.6027447079541,
+  "wall_clock_target_s": 1800.0
+}

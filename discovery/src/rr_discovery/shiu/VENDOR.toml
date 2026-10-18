@@ -1,0 +1,19 @@
+[upstream]
+repo = "philshiu/Drosophila_brain_model"
+url = "https://github.com/philshiu/Drosophila_brain_model"
+commit = "91bdd1e7dcf193f3e7ca5a8933497fcef63b7960"
+commit_date = "2024-09-14T09:47:44-04:00"
+license = "MIT (see LICENSE in this directory)"
+citation = "Shiu, P. K. et al. A Drosophila computational brain model reveals sensorimotor processing. Nature 634, 210-219 (2024)"
+
+[files."LICENSE"]
+upstream_sha256 = "3621f6d6476189190e2960fa43f11b275ba4eca848fdac50a1ba2925de6223e8"
+vendored_sha256 = "3621f6d6476189190e2960fa43f11b275ba4eca848fdac50a1ba2925de6223e8"
+
+[files."model.py"]
+upstream_sha256 = "fc45837d7122c6ce2a7f3f2f23c515992e4b232aadb919efabb72337fac88e4e"
+vendored_sha256 = "fc45837d7122c6ce2a7f3f2f23c515992e4b232aadb919efabb72337fac88e4e"
+
+[files."utils.py"]
+upstream_sha256 = "f378cf0b464f2ac5e1daf3609ba25fd51c7e34f294846281707ffe006c3e9ef1"
+vendored_sha256 = "f378cf0b464f2ac5e1daf3609ba25fd51c7e34f294846281707ffe006c3e9ef1"

@@ -1,0 +1,30 @@
+# M6 robustness grid (R2). Frozen before the first long-run simulation; later edits need a [[deviations]] entry.
+[robustness]
+schema = 1
+seed_origin = 786000        # condition k (0-based, enumeration order) uses seed_base = seed_origin + k * seed_stride
+seed_stride = 100           # must be >= [discover].n_trials
+time_cap_s = 10800          # 3 h hard cap (R10); CLI --time-cap-s overrides
+budget_probe_conditions = 3 # conditions timed before the projection
+min_reduced_trials = 15     # R10 step 3 floor
+reduced_control_draws = 3   # R10 step 2
+chance_draws = 1000         # R13
+chance_seed = 791000
+shuffle_rounds = 20         # rounds of disjoint-pair edge swaps per shuffle (R12)
+left_label = "left"
+right_label = "right"
+
+[robustness.families]
+rate_hz = [50.0, 100.0, 200.0]                      # R3
+w_syn_mult = [0.5, 0.75, 1.5, 2.0]                  # R4
+f_poi_mult = [0.5, 0.75, 1.5, 2.0]                  # R4
+subsets = ["lc4", "lplc2", "both"]                  # R5
+sides = ["left", "right", "bilateral"]              # R5 (both x bilateral = baseline, skipped)
+seed_replicates = 5                                 # R6
+interaction_groups = ["lc4", "lplc2"]               # R7
+interaction_rate_hz = [50.0, 100.0, 200.0]          # R7
+random_set_draws = 5                                # R11
+shuffle_draws = 5                                   # R12
+
+# [[robustness.deviations]]
+# from_sha256 = "<sha256 of the frozen grid file>"
+# reason = "<why the grid changed after freezing>"

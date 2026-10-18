@@ -1,0 +1,115 @@
+"""Pre-registered S1 constants.
+
+Changing any value after the pre-registration commit is a deviation (spec R1).
+"""
+
+import math
+
+ROOT_SEED = 20261018
+CIRCUIT_DIR = "circuit-data/v783"
+EXPECTED_CIRCUIT_SHA256 = "4ca62284d2831f01228e2d0f8a71fdfce78a0b26674cb1bbccf537f487263d91"
+
+DT_MS = 0.1
+WINDOW_MS = 100.0
+
+GRID_N = 64
+LOG10_RATE_MIN = 0.0
+LOG10_RATE_MAX = 3.0
+
+OUTCOMES = ("gf_first", "parallel_first", "tie", "no_fire")
+OUTCOME_CHAR = {"gf_first": "G", "parallel_first": "P", "tie": "T", "no_fire": "."}
+
+N_DETERMINISM_POINTS = 20
+N_LOOKUP_AGREEMENT_POINTS = 200
+
+A_MIN_FRACTION = 0.05
+A_MIN_LARGEST_REGION_SHARE = 0.80
+A_MAX_CHANGES_PER_LINE = 2
+A_MAX_FRACTION_LINES_OVER = 0.20
+
+L_LOG_MU = math.log(400.0)
+L_LOG_SIGMA = 1.0
+L_LOG_LO = math.log(20.0)
+L_LOG_HI = math.log(20000.0)
+COPULA_RHO = -0.31
+RISK_PROBS = (0.5, 0.3, 0.2)
+
+SCENARIOS = ("N0", "L1", "L2", "X1", "X2", "C1")
+NOISES = ("base", "high")
+N0_P = 0.7
+
+L1_COEF = (0.5, 3.0, -2.0, -0.8, 1.5)
+
+L2_U = (1.0, -0.5, -0.2, 0.0)
+L2_CUT = 0.15
+L2_STEEP = 40.0
+L2_LO = 0.15
+L2_SPAN = 0.75
+
+P_HIGH = 0.85
+P_LOW = 0.25
+
+X1_S_CUT = 0.6
+X1_L_CUT = 0.35
+
+X2_S_CUT_K0 = 0.6
+X2_BAND = (0.3, 0.7)
+X2_XOR_CUT = 0.5
+
+C1_LC4 = (2.0, -1.0, 0.0, 0.5)
+C1_LPLC2 = (-1.0, 1.0, 1.0, 0.0)
+C1_LPLC2_OFFSET = 1.5
+C1_OFFSET_CANDIDATES = tuple(round(-3.0 + 0.1 * i, 1) for i in range(61))
+C1_REF_N = 100_000
+C1_DEGENERATE_BOUNDS = (0.10, 0.90)
+
+HIGH_NOISE_SHRINK = 0.5
+
+COST_CORRECT = 1.0
+COST_ESCALATE = 5.0
+P_VALUES = (3.0, 10.0, 30.0)
+P_BASE = 10.0
+
+N_TRAIN = 2000
+N_TEST = 20000
+N_SEEDS = 20
+
+LR_L2 = 1e-4
+LR_MAX_ITER = 100
+LR_TOL = 1e-10
+
+CIRCUIT_RESTARTS = 8
+CIRCUIT_ITERS_PER_RESTART = 500
+ES_SIGMA0 = 0.5
+ES_DECAY = 0.995
+GAIN_BOUNDS = (-6.0, 6.0)
+OFFSET_BOUNDS = (-3.0, 6.0)
+INIT_GAIN_RANGE = (-3.0, 3.0)
+INIT_OFFSET_RANGE = (0.0, 3.0)
+THETA0 = (1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0, 1.0)
+
+MLP_HIDDEN = 16
+MLP_STEPS = 3000
+MLP_LR = 0.01
+MLP_L2 = 1e-4
+ADAM_BETAS = (0.9, 0.999)
+ADAM_EPS = 1e-8
+
+MATCHED_SHARE = 0.50
+MATCHED_TOL = 0.02
+
+N_BOOT = 10_000
+WIN_REL = 0.02
+NONLIN_REL = 0.02
+V1_REL = 0.01
+V3_REL = 0.02
+
+RNG_TRAIN_SIGNALS = 1
+RNG_TEST_SIGNALS = 2
+RNG_LABELS = 3
+RNG_CIRCUIT_FIT = 4
+RNG_MLP = 5
+RNG_BOOT = 6
+RNG_DET_CHECK = 7
+RNG_LOOKUP_CHECK = 8
+RNG_C1_REF = 9
